@@ -45,7 +45,11 @@ module.exports = {
         type: DataTypes.DATE,
         allowNull: true
       }
-    })
+    }).then(function () {
+      return queryInterface.sequelize.query(
+          'ALTER TABLE "advertiserCommercialCampaignAssociations" ADD CONSTRAINT advertiser_commercial_campaign_associations_unique UNIQUE ("campaignId", "commercialId");'
+      );
+    });
   },
 
   down (queryInterface) {
