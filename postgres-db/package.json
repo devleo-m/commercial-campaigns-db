@@ -4,7 +4,11 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "nodemon --exec ts-node src/web/app.ts"
+    "dev": "nodemon --exec ts-node src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devleo-m/commercial-campaigns-db.git"
   },
   "keywords": [],
   "author": "",
