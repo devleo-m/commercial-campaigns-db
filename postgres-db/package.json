@@ -6,6 +6,10 @@
     "test": "jest",
     "dev": "nodemon --exec ts-node src/app.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devleo-m/commercial-campaigns-db.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
