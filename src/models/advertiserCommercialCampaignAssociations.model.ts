@@ -54,6 +54,12 @@ export const AdvertiserCommercialCampaignAssociations = <AdvertiserCommercialCam
     },
     {
         tableName: 'advertiserCommercialCampaignAssociations',
-        paranoid: true
+        paranoid: true,
+        indexes: [
+            {
+                unique: true,
+                fields: ['campaignId', 'commercialId']
+            }
+        ]
     }
 )
