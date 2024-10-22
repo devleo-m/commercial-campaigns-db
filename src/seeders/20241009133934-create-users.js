@@ -19,7 +19,7 @@ module.exports = {
       }
     ]);
   },
- down: (queryInterface) => {
-    return queryInterface.bulkDelete('users', null, {});
-  }
+  down: (queryInterface) => {
+      return queryInterface.bulkDelete('users', null, {});
+    }
 };
